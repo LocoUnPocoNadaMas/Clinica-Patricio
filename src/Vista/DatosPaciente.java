@@ -5,8 +5,6 @@
  */
 package Vista;
 
-import java.util.Scanner;
-
 /**
  *
  * @author patri

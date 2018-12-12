@@ -7,7 +7,6 @@ package Principal;
 import Vista.NuevoPaciente;
 import Vista.NuevoTurno;
 import Vista.PantallaPrincipal;
-import java.awt.AWTException;
 
 /**
  *
@@ -18,10 +17,9 @@ public class Main {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) throws AWTException{
+    public static void main(String[] args){
         // TODO code application logic here
         PantallaPrincipal.MenuPrincipal();
-        //PantallaPrincipal.MenuPrincipal();
     }
     
 }

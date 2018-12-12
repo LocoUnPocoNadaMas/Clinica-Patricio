@@ -6,7 +6,7 @@
 package Vista;
 
 import java.util.Scanner;
-
+import Controlador.ControladorPaciente;
 
 /**
  *
@@ -14,13 +14,14 @@ import java.util.Scanner;
  */
 public class NuevoPaciente implements Literales {
     
-    public static void MenuNuevoPaciente(){
+    public static void AgregarNuevoPaciente(){
         
+        int id_paciente=0;
         //protected int id_paciente;
         int dni;
         String nombre;
         String apellido;
-        String genero;
+        boolean genero=true;
         
         String direccion;
         String telefono;
@@ -33,11 +34,13 @@ public class NuevoPaciente implements Literales {
         String cobertura;
         String plan;
         
+        char respuesta0;
+        char respuesta1;
+        
         Scanner sc1 = new Scanner(System.in);
         
         System.out.println(universo0);
         System.out.println(mNuevoP0);
-        
         
         
         System.out.println(mNuevoP1);
@@ -59,7 +62,7 @@ public class NuevoPaciente implements Literales {
         */
         
         System.out.println(mNuevoP4);
-        genero = sc1.next();
+        //genero = sc1.next();
         
         System.out.println(mNuevoP5);
         direccion = sc1.next();
@@ -90,6 +93,25 @@ public class NuevoPaciente implements Literales {
         /// llamar al controlador y grabar el paciente
         //verificar el resultado de la operación y volver a ingresar todo los datos
         // si va bien volver al menu de paciente
+        
+        System.out.println(mNuevoP11);
+        respuesta0 = sc1.next().charAt(0);
+        if (respuesta0 == 's') {
+            new ControladorPaciente().guardarPaciente(id_paciente, dni, nombre, 
+                    apellido, genero, direccion, telefono, 
+                    celular, dia, mes, anio, cobertura, plan);
+        }if (respuesta0 == 'n') {
+            System.out.println("Descartando...");
+            PantallaPrincipal.MenuPrincipal();
+        }else System.out.println("Tarado eh");
+        System.out.println(mNuevoP12);
+        respuesta1 = sc1.next().charAt(0);
+        if (respuesta1 == 's') {
+            NuevoPaciente.AgregarNuevoPaciente();
+        }if (respuesta1 == 'n') {
+            System.out.println("Saliendo...");
+            PantallaPrincipal.MenuPrincipal();
+        }else System.out.println("Tarado eh");
     }
 }
 

@@ -26,7 +26,7 @@ public class MenuTurnos {
         
         switch (eleccionT)
         {
-            case 1: NuevoPaciente.MenuNuevoPaciente();
+            case 1: NuevoPaciente.AgregarNuevoPaciente();
             break;
             case 2: ModificarPaciente.MenuModificarPaciente();
             break;

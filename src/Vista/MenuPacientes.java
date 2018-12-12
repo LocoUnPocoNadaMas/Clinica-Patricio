@@ -26,11 +26,12 @@ public class MenuPacientes {
         
         switch (opcionDP)
         {
-            case 1: NuevoPaciente.MenuNuevoPaciente();
+            case 1: NuevoPaciente.AgregarNuevoPaciente();
             break;
             case 2: ModificarPaciente.MenuModificarPaciente();
             break;
-            //case 3: Eliminar();
+            //case 3: BusquedaPacientes.BuscarPaciente(dni);
+                //case 3: Eliminar();
             //break;
         }
     }

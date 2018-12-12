@@ -14,7 +14,7 @@ import java.util.Scanner;
  */
 public class MenuPantallaPrincipal implements Literales{
     
-    public static void EleccionPantallaPrincipal() throws AWTException
+    public static void EleccionPantallaPrincipal()// throws AWTException
     {
         int menuOpcion=0;
         Scanner sc1 = new Scanner(System.in);
@@ -35,7 +35,7 @@ public class MenuPantallaPrincipal implements Literales{
              * Modificar o Eliminar por lo tanto solo
              * damos la opcion de crear nuevo Paciente
              */
-            case 1: NuevoPaciente.MenuNuevoPaciente();
+            case 1: NuevoPaciente.AgregarNuevoPaciente();
             break;
             /****************************************/
             case 2: MenuTurnos.EleccionTurnos();

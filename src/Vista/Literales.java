@@ -46,6 +46,8 @@ public interface Literales {
     public static final String mNuevoP8="Fecha de Nac.(dd/mm/aa):";
     public static final String mNuevoP9="Cobertura Médica:";
     public static final String mNuevoP10="Plan:";
+    public static final String mNuevoP11="Desea Guardar? Ingrese: S(Si) o N(No)";
+    public static final String mNuevoP12="Desea Agregar otro Paciente? Ingrese: S(Si) o N(No)";
     
     // Menu Nuevo Turno
     

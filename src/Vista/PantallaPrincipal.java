@@ -5,9 +5,8 @@
  */
 package Vista;
 
-import java.awt.AWTException;
-import java.awt.Robot;
-import java.awt.event.KeyEvent;
+import Modelo.Paciente;
+import java.util.List;
 import java.util.Scanner;
 
 /**
@@ -16,9 +15,10 @@ import java.util.Scanner;
  */
 public class PantallaPrincipal implements Literales{
     
-    public static void MenuPrincipal() throws AWTException{
+    public static void MenuPrincipal(){
         
-        String documento="";
+        
+        String documento;
         int menuOpcion = 0;
         
         Scanner sc1 = new Scanner(System.in);
@@ -31,7 +31,8 @@ public class PantallaPrincipal implements Literales{
             MenuPantallaPrincipal.EleccionPantallaPrincipal();
         else {
             System.out.println("Buscando...");
-            DatosPaciente.MostrarDatosPaciente();
+            new BusquedaPacientes().BuscarPaciente(documento);
+            //DatosPaciente.MostrarDatosPaciente();
         }
         
         //menuOpcion = sc1.nextInt();
@@ -49,17 +50,5 @@ public class PantallaPrincipal implements Literales{
             default:
             break;
         }
-    }
-  
-    
-    
-    
-    public static void limpiarpantalla() throws AWTException{
-        
-        Robot robot = new Robot();
-
-        robot.keyPress(KeyEvent.VK_CONTROL);
-
-        robot.keyPress(KeyEvent.VK_L);
     }
 }
