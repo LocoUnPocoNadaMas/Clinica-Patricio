@@ -14,27 +14,22 @@ import java.util.List;
  */
 public class CrudPacientes {
     
-    private List<Paciente> listaPaciente;
+    // Privados, solo accesibles desde la instancia
     private static CrudPacientes instance;
+    private List<Paciente> listaPaciente;
     
     //constructor
-    public CrudPacientes(){
+    private CrudPacientes(){
         this.listaPaciente = new ArrayList();        
     }
     
-    /*
-    * No se que hace
-    *
-    */
-    
-     public static CrudPacientes getInstance(){
+    //Singleton
+    public static CrudPacientes getInstance(){
         if (instance == null){
             instance = new CrudPacientes();
-        }else{
-            System.out.println("El objeto ya existe");
         }
         return instance;
-     }
+    }
      
      /**
      * addPacientes(Paciente p)
@@ -49,7 +44,7 @@ public class CrudPacientes {
         return this.listaPaciente;
     }
     
-    public int SearchClient(int DNI){
+    public int buscarPaciente(int DNI){
         int i=0;
         int result = -1;
         for(i=0;i<=this.listaPaciente.size();i++){

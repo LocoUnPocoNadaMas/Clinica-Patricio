@@ -17,7 +17,8 @@ public class NuevoPaciente implements Literales {
     public static void AgregarNuevoPaciente(){
         
         int id_paciente=0;
-        //protected int id_paciente;
+        int i;
+        
         int dni;
         String nombre;
         String apellido;
@@ -90,20 +91,27 @@ public class NuevoPaciente implements Literales {
         System.out.println(mNuevoP10);
         plan = sc1.next();
         
-        /// llamar al controlador y grabar el paciente
-        //verificar el resultado de la operación y volver a ingresar todo los datos
+        // llamar al controlador y grabar el paciente
+        // verificar el resultado de la operación y volver a ingresar todo los datos
         // si va bien volver al menu de paciente
         
         System.out.println(mNuevoP11);
+        
         respuesta0 = sc1.next().charAt(0);
+        
         if (respuesta0 == 's') {
-            new ControladorPaciente().guardarPaciente(id_paciente, dni, nombre, 
-                    apellido, genero, direccion, telefono, 
-                    celular, dia, mes, anio, cobertura, plan);
+            ControladorPaciente.getInstance().guardarPaciente(id_paciente, dni, nombre, apellido, genero, direccion, telefono, celular, dia, mes, anio, cobertura, plan);
+            
+            for(i=0; i<= ControladorPaciente.getInstance().mostrarPacientes().size(); i++){
+                System.out.println(ControladorPaciente.getInstance().mostrarPacientes().get(i).getNombre());
+            }
+            
         }if (respuesta0 == 'n') {
             System.out.println("Descartando...");
             PantallaPrincipal.MenuPrincipal();
         }else System.out.println("Tarado eh");
+        
+        
         System.out.println(mNuevoP12);
         respuesta1 = sc1.next().charAt(0);
         if (respuesta1 == 's') {
