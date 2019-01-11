@@ -23,8 +23,8 @@ public class MenuPantallaPrincipal implements Literales{
         System.out.println(mPantallaPrincipal2);
         System.out.println(mPantallaPrincipal3);
         System.out.println(mPantallaPrincipal4);
-        //System.out.println(mPantallaPrincipal5);
-            //System.out.println(mPantallaPrincipal6);
+        System.out.println(mPantallaPrincipal5);
+        System.out.println(mPantallaPrincipal6);
             //System.out.println(mPantallaPrincipal7);
         System.out.println(mPantallaPrincipal10);
         menuOpcion = sc1.nextInt();
@@ -42,6 +42,9 @@ public class MenuPantallaPrincipal implements Literales{
             break;
             /****************************************/
             case 3: MenuMedicos.EleccionMedicos();
+            break;
+            /****************************************/
+            case 4: MenuPacientes.EleccionPacientes();
             break;
             /****************************************/
             case 0: PantallaPrincipal.MenuPrincipal();

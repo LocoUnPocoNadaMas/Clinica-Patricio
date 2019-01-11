@@ -5,6 +5,7 @@
  */
 package Modelo;
 
+import Controlador.ControladorPaciente;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -47,7 +48,7 @@ public class CrudPacientes {
     public int buscarPaciente(int DNI){
         int i=0;
         int result = -1;
-        for(i=0;i<=this.listaPaciente.size();i++){
+        for(i=0;i<this.listaPaciente.size();i++){
             if (this.listaPaciente.get(i).getDni() == DNI){               
                 result = this.listaPaciente.indexOf(this.listaPaciente.get(i));                
             }           
@@ -57,7 +58,7 @@ public class CrudPacientes {
     
     public List<Paciente> buscarPaciente(String apellido){        
         List<Paciente> listaEncontrados = new ArrayList(); 
-        int i=0;        
+        int i;        
         
         for(i=0;i<=this.listaPaciente.size();i++){            
              
@@ -67,5 +68,19 @@ public class CrudPacientes {
             }           
         }        
         return listaEncontrados;
+    }
+    
+    public Paciente BuscarPaciente(int dni){
+        Paciente encontrado = null;
+        int i;
+        //this.listaPaciente = new ArrayList();
+        
+        for (i = 0; i < listaPaciente.size() - 1; i++) {
+            if(dni == ControladorPaciente.getInstance().mostrarPacientes().get(i).getDni()){
+                encontrado = ControladorPaciente.getInstance().mostrarPacientes().get(i);
+            }
+        }
+        return encontrado;
+        
     }
 }

@@ -16,19 +16,19 @@ public class NuevoTurno implements Literales{
     public static void MenuNuevoTurno(){
     
         System.out.println(universo0);
-        System.out.println(mNuevoT0);
+        System.out.println(nuevoT0);
         
-        System.out.println(mNuevoT1);
+        System.out.println(nuevoT1);
         
-        System.out.println(mNuevoT2);
+        System.out.println(nuevoT2);
         
-        System.out.println(mNuevoT3);
+        System.out.println(nuevoT3);
         
-        System.out.println(mNuevoT4);
+        System.out.println(nuevoT4);
         
-        System.out.println(mNuevoT5);
-        System.out.println(mNuevoT6);
-        System.out.println(mNuevoT7);
-        System.out.println(mNuevoT8);
+        System.out.println(nuevoT5);
+        System.out.println(nuevoT6);
+        System.out.println(nuevoT7);
+        System.out.println(nuevoT8);
     }
 }

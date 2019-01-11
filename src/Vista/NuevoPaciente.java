@@ -5,8 +5,8 @@
  */
 package Vista;
 
-import java.util.Scanner;
 import Controlador.ControladorPaciente;
+import java.util.Scanner;
 
 /**
  *
@@ -41,19 +41,19 @@ public class NuevoPaciente implements Literales {
         Scanner sc1 = new Scanner(System.in);
         
         System.out.println(universo0);
-        System.out.println(mNuevoP0);
+        System.out.println(nuevoP0);
         
         
-        System.out.println(mNuevoP1);
+        System.out.println(nuevoP1);
         dni = sc1.nextInt();
         
         
         
-        System.out.println(mNuevoP2);
+        System.out.println(nuevoP2);
         nombre = sc1.next();
         
         
-        System.out.println(mNuevoP3);
+        System.out.println(nuevoP3);
         apellido = sc1.next();
         
         /*
@@ -62,16 +62,16 @@ public class NuevoPaciente implements Literales {
         
         */
         
-        System.out.println(mNuevoP4);
+        System.out.println(nuevoP4);
         //genero = sc1.next();
         
-        System.out.println(mNuevoP5);
+        System.out.println(nuevoP5);
         direccion = sc1.next();
         
-        System.out.println(mNuevoP6);
+        System.out.println(nuevoP6);
         telefono = sc1.next();
         
-        System.out.println(mNuevoP7);
+        System.out.println(nuevoP7);
         celular = sc1.next();
         
         /*
@@ -80,46 +80,49 @@ public class NuevoPaciente implements Literales {
         
         */
         
-        System.out.println(mNuevoP8);
+        System.out.println(nuevoP8);
         dia = sc1.nextInt();
         mes = sc1.nextInt();
         anio = sc1.nextInt();
         
-        System.out.println(mNuevoP9);
+        System.out.println(nuevoP9);
         cobertura = sc1.next();
         
-        System.out.println(mNuevoP10);
+        System.out.println(nuevoP10);
         plan = sc1.next();
         
         // llamar al controlador y grabar el paciente
         // verificar el resultado de la operación y volver a ingresar todo los datos
         // si va bien volver al menu de paciente
         
-        System.out.println(mNuevoP11);
+        System.out.println(nuevoP11);
         
-        respuesta0 = sc1.next().charAt(0);
+        respuesta0 = sc1.next().toLowerCase().charAt(0);
         
         if (respuesta0 == 's') {
             ControladorPaciente.getInstance().guardarPaciente(id_paciente, dni, nombre, apellido, genero, direccion, telefono, celular, dia, mes, anio, cobertura, plan);
             
-            for(i=0; i<= ControladorPaciente.getInstance().mostrarPacientes().size(); i++){
-                System.out.println(ControladorPaciente.getInstance().mostrarPacientes().get(i).getNombre());
-            }
-            
-        }if (respuesta0 == 'n') {
+        }else if (respuesta0 == 'n') {
             System.out.println("Descartando...");
             PantallaPrincipal.MenuPrincipal();
-        }else System.out.println("Tarado eh");
+        }else {
+            System.out.println("Tarado eh");
+            PantallaPrincipal.MenuPrincipal();
+        }
         
         
-        System.out.println(mNuevoP12);
-        respuesta1 = sc1.next().charAt(0);
+        System.out.println(nuevoP12);
+        respuesta1 = sc1.next().toLowerCase().charAt(0);
+        
         if (respuesta1 == 's') {
             NuevoPaciente.AgregarNuevoPaciente();
-        }if (respuesta1 == 'n') {
+        }else if (respuesta1 == 'n') {
             System.out.println("Saliendo...");
             PantallaPrincipal.MenuPrincipal();
-        }else System.out.println("Tarado eh");
+        }else {
+            System.out.println("Tarado eh");
+            PantallaPrincipal.MenuPrincipal();
+        }
     }
 }
 

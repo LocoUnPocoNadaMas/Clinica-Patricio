@@ -11,28 +11,54 @@ import java.util.Scanner;
  *
  * @author patri
  */
-public class MenuPacientes {
+public class MenuPacientes implements Literales{
     
     
     public static void EleccionPacientes()
     {
         
-        int opcionDP=0;
-        Scanner sc1 = new Scanner(System.in);
-        do{
-            System.out.println("Crear Nuevo(1), Modificar(2), Eliminar(3)");
-            opcionDP = sc1.nextInt();
-        }while (!(opcionDP==1 || opcionDP==2 || opcionDP==3));
+        int opcion;
+        int abm;
         
-        switch (opcionDP)
+        Scanner sc1 = new Scanner(System.in);
+        
+        System.out.println(mPaciente0);
+        System.out.println(mPaciente1);
+        System.out.println(mPaciente2);
+        System.out.println(mPaciente3);
+        System.out.println(mPaciente4);
+        //System.out.println(mPaciente5);
+        System.out.println(mPaciente6);
+        System.out.println(mPaciente10);
+        
+        opcion = sc1.nextInt();
+        
+        switch (opcion)
         {
             case 1: NuevoPaciente.AgregarNuevoPaciente();
             break;
-            case 2: ModificarPaciente.MenuModificarPaciente();
+            
+            case 2: {
+                abm=0;
+                BusquedaPacientes.BuscarPaciente(abm);
+            }
             break;
-            //case 3: BusquedaPacientes.BuscarPaciente(dni);
-                //case 3: Eliminar();
-            //break;
+            case 3: {
+                abm=1;
+                BusquedaPacientes.BuscarPaciente(abm);
+            }
+            break;
+            case 4: {
+                abm=2;
+                BusquedaPacientes.BuscarPaciente(abm);
+            }
+            break;
+            
+            case 5: MostrarPacientes.listarPacientes();
+            break;
+            
+            default: MenuPacientes.EleccionPacientes();
+            break;
         }
     }
 }

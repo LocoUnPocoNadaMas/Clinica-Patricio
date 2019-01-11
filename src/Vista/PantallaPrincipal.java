@@ -19,36 +19,34 @@ public class PantallaPrincipal implements Literales{
         
         
         String documento;
+        int dni;
         int menuOpcion = 0;
+        int existePaciente;
         
         Scanner sc1 = new Scanner(System.in);
         
         System.out.println(universo0);
-        System.out.println(mPantallaPrincipal0);
-        System.out.println(mPantallaPrincipal1);
+        System.out.println(pantallaPrincipal1);
+        System.out.println(pantallaPrincipal2);
         documento = sc1.nextLine();
-        if(documento.isEmpty()) 
+        if(documento.isEmpty()){
+            System.out.println(pantallaPrincipal0);
             MenuPantallaPrincipal.EleccionPantallaPrincipal();
-        else {
-            System.out.println("Buscando...");
-            new BusquedaPacientes().BuscarPaciente(documento);
-            //DatosPaciente.MostrarDatosPaciente();
         }
-        
-        //menuOpcion = sc1.nextInt();
-        
-        seleccionMenuPrincipal(menuOpcion);
-        
-    }
-    private static void seleccionMenuPrincipal(int menuOpcion) {
-        
-        switch (menuOpcion)
-        {
-            case 0: System.out.println("");
-            break;
+        else{
+            dni = Integer.parseInt(documento);
+            System.out.println("Buscando...");
             
-            default:
-            break;
+            // Si No Existe recargamos la pantalla prncipal
+            if(BusquedaPacientes.getInstance().BuscarPaciente(dni)==false){
+                System.out.println(pantallaPrincipalerror0);
+                PantallaPrincipal.MenuPrincipal();
+                
+            // Si Existe mostrariamos un Menu con opciones para ese paciente
+            }else {
+                int abm=0;
+                BusquedaPacientes.BuscarPaciente(dni,abm);
+            }
         }
     }
 }
