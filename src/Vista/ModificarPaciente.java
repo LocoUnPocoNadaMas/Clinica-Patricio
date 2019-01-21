@@ -11,7 +11,7 @@ package Vista;
  */
 public class ModificarPaciente implements Literales{
     
-    public static void MenuModificarPaciente(){
+    public static void modificarPaciente(){
         
         int opcionMDP=0;
         

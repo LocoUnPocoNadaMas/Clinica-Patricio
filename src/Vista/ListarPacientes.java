@@ -11,7 +11,7 @@ import Controlador.ControladorPaciente;
  *
  * @author patri
  */
-public class MostrarPacientes {
+public class ListarPacientes {
     
     public static void listarPacientes(){
         int i;

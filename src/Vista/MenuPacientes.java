@@ -14,10 +14,10 @@ import java.util.Scanner;
 public class MenuPacientes implements Literales{
     
     
-    public static void EleccionPacientes()
+    public static void menuPacientes()
     {
         
-        int opcion;
+        int opcion,opcion1=1;
         int abm;
         
         Scanner sc1 = new Scanner(System.in);
@@ -35,30 +35,35 @@ public class MenuPacientes implements Literales{
         
         switch (opcion)
         {
-            case 1: NuevoPaciente.AgregarNuevoPaciente();
+            case 1: NuevoPaciente.nuevoPaciente();
             break;
             
             case 2: {
                 abm=0;
-                BusquedaPacientes.BuscarPaciente(abm);
+                BusquedaPacientes.buscarPaciente(abm);
             }
             break;
             case 3: {
                 abm=1;
-                BusquedaPacientes.BuscarPaciente(abm);
+                BusquedaPacientes.buscarPaciente(abm);
             }
             break;
             case 4: {
                 abm=2;
-                BusquedaPacientes.BuscarPaciente(abm);
+                BusquedaPacientes.buscarPaciente(abm);
             }
             break;
             
-            case 5: MostrarPacientes.listarPacientes();
+            case 5: ListarPacientes.listarPacientes();
             break;
             
-            default: MenuPacientes.EleccionPacientes();
+            default: MenuPacientes.menuPacientes();
             break;
         }
+        while(opcion1!=0){
+            System.out.println(mPaciente11);
+            opcion1 = sc1.nextInt();
+        }
+        MenuPantallaPrincipal.menuPantallaPrincipal();
     }
 }

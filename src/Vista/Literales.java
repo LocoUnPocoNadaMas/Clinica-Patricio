@@ -37,7 +37,7 @@ public interface Literales {
     
     // Menu Paciente
     
-    public static final String mPaciente0="\ttMenu Paciente\n\n";
+    public static final String mPaciente0="\t\tMenu Paciente\n\n";
     public static final String mPaciente1="1.- Crear Nuevo Paciente";
     public static final String mPaciente2="2.- Ver Datos Paciente";
     public static final String mPaciente3="3.- Modificar Paciente";
@@ -48,6 +48,7 @@ public interface Literales {
     public static final String mPaciente8="";
     public static final String mPaciente9="";
     public static final String mPaciente10="0.- Salir";
+    public static final String mPaciente11="0.- Volver";
     
     // Menu Turno
     

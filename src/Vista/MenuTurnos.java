@@ -13,7 +13,7 @@ import java.util.Scanner;
  */
 public class MenuTurnos {
     
-    public static void EleccionTurnos()
+    public static void menuTurnos()
     {
         
         int eleccionT=0;
@@ -26,9 +26,9 @@ public class MenuTurnos {
         
         switch (eleccionT)
         {
-            case 1: NuevoPaciente.AgregarNuevoPaciente();
+            case 1: 
             break;
-            case 2: ModificarPaciente.MenuModificarPaciente();
+            case 2: 
             break;
             //case 3: Eliminar();
             //break;

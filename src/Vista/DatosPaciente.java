@@ -11,7 +11,7 @@ package Vista;
  */
 public class DatosPaciente implements Literales{
     
-    public static void MostrarDatosPaciente(){
+    public static void datosPaciente(){
         
         
         System.out.println(universo0);
@@ -36,7 +36,7 @@ public class DatosPaciente implements Literales{
         
         System.out.println(mDatosP10);
         
-        MenuPacientes.EleccionPacientes();
+        MenuPacientes.menuPacientes();
     }
     
     private static void Eliminar()

@@ -14,7 +14,7 @@ import java.util.Scanner;
  */
 public class NuevoPaciente implements Literales {
     
-    public static void AgregarNuevoPaciente(){
+    public static void nuevoPaciente(){
         
         int id_paciente=0;
         int i;
@@ -104,10 +104,10 @@ public class NuevoPaciente implements Literales {
             
         }else if (respuesta0 == 'n') {
             System.out.println("Descartando...");
-            PantallaPrincipal.MenuPrincipal();
+            PantallaPrincipal.pantallaPrincipal();
         }else {
             System.out.println("Tarado eh");
-            PantallaPrincipal.MenuPrincipal();
+            PantallaPrincipal.pantallaPrincipal();
         }
         
         
@@ -115,13 +115,13 @@ public class NuevoPaciente implements Literales {
         respuesta1 = sc1.next().toLowerCase().charAt(0);
         
         if (respuesta1 == 's') {
-            NuevoPaciente.AgregarNuevoPaciente();
+            NuevoPaciente.nuevoPaciente();
         }else if (respuesta1 == 'n') {
             System.out.println("Saliendo...");
-            PantallaPrincipal.MenuPrincipal();
+            PantallaPrincipal.pantallaPrincipal();
         }else {
             System.out.println("Tarado eh");
-            PantallaPrincipal.MenuPrincipal();
+            PantallaPrincipal.pantallaPrincipal();
         }
     }
 }

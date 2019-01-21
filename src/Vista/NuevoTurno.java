@@ -13,7 +13,7 @@ import java.util.Scanner;
  */
 public class NuevoTurno implements Literales{
     
-    public static void MenuNuevoTurno(){
+    public static void nuevoTurno(){
     
         System.out.println(universo0);
         System.out.println(nuevoT0);

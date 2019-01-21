@@ -15,7 +15,7 @@ import java.util.Scanner;
  */
 public class PantallaPrincipal implements Literales{
     
-    public static void MenuPrincipal(){
+    public static void pantallaPrincipal(){
         
         
         String documento;
@@ -31,16 +31,16 @@ public class PantallaPrincipal implements Literales{
         documento = sc1.nextLine();
         if(documento.isEmpty()){
             System.out.println(pantallaPrincipal0);
-            MenuPantallaPrincipal.EleccionPantallaPrincipal();
+            MenuPantallaPrincipal.menuPantallaPrincipal();
         }
         else{
             dni = Integer.parseInt(documento);
             System.out.println("Buscando...");
             
             // Si No Existe recargamos la pantalla prncipal
-            if(BusquedaPacientes.getInstance().BuscarPaciente(dni)==false){
+            if(BusquedaPacientes.buscarPaciente(dni)==-1){
                 System.out.println(pantallaPrincipalerror0);
-                PantallaPrincipal.MenuPrincipal();
+                PantallaPrincipal.pantallaPrincipal();
                 
             // Si Existe mostrariamos un Menu con opciones para ese paciente
             }else {

@@ -27,12 +27,14 @@ public class BusquedaPacientes {
     
     private static List<Paciente> listaPaciente;
     
-    public static boolean BuscarPaciente(int dni){
-        boolean re=false;
-        for (int i = 0; i <= listaPaciente.size() - 1; i++){
-            if(dni == ControladorPaciente.getInstance().mostrarPacientes().get(i).getDni()) re=true;
+    public static int buscarPaciente(int dni){
+        int posicion=-1;
+        if(listaPaciente!=null){
+            for (int i = 0; i <= listaPaciente.size() - 1; i++){
+                if(dni == ControladorPaciente.getInstance().mostrarPacientes().get(i).getDni()) posicion=i;
+            }
         }
-        return re;
+        return posicion;
     }
     
     public static Paciente BuscarPaciente(int dni, int abm){
