@@ -11,27 +11,39 @@ import java.util.Scanner;
  *
  * @author patri
  */
-public class MenuTurnos {
+public class MenuTurnos implements Literales{
     
     public static void menuTurnos()
     {
-        
         int eleccionT=0;
         Scanner sc1 = new Scanner(System.in);
-        do{
-            System.out.println("Crear Nuevo(1), Modificar(2), Eliminar(3)");
-            
-            eleccionT = sc1.nextInt();
-        }while (!(eleccionT==1 || eleccionT==2 || eleccionT==3));
         
+        System.out.println(mTurno0);
+        System.out.println(mTurno1);
+        System.out.println(mTurno2);
+        System.out.println(mTurno3);
+        System.out.println(mTurno4);
+        System.out.println(mTurno5);
+        //System.out.println(mTurno6);
+        System.out.println();
+        System.out.println(mTurno10);
+        eleccionT = sc1.nextInt();
         switch (eleccionT)
         {
-            case 1: 
+            case 1: NuevoTurno.nuevoTurno();
             break;
-            case 2: 
+            case 2: //
             break;
-            //case 3: Eliminar();
-            //break;
+            case 3: //
+            break;
+            case 4: //
+            break;
+            case 5: //
+            break;
+            case 0: MenuPantallaPrincipal.menuPantallaPrincipal();
+            break;
+            default: MenuPantallaPrincipal.menuPantallaPrincipal();
+            break;
         }
     }
 }

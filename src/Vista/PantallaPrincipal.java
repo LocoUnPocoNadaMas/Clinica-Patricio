@@ -44,8 +44,11 @@ public class PantallaPrincipal implements Literales{
                 
             // Si Existe mostrariamos un Menu con opciones para ese paciente
             }else {
+                System.out.println("encontrado");
+                /*
                 int abm=0;
                 BusquedaPacientes.BuscarPaciente(dni,abm);
+                        */
             }
         }
     }

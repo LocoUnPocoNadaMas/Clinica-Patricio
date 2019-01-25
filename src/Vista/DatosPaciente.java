@@ -5,6 +5,9 @@
  */
 package Vista;
 
+import java.io.OutputStream;
+import java.io.PrintWriter;
+
 /**
  *
  * @author patri
@@ -14,34 +17,35 @@ public class DatosPaciente implements Literales{
     public static void datosPaciente(){
         
         
-        System.out.println(universo0);
-        System.out.println(mDatosP0);
-        
-        //System.out.println(mDatosP1);
-        System.out.println(mDatosP2);
-        
-        System.out.println(mDatosP3);
-        
-        System.out.println(mDatosP4);
-        
-        System.out.println(mDatosP5);
-        
-        System.out.println(mDatosP6);
-        
-        System.out.println(mDatosP7);
-        
-        System.out.println(mDatosP8);
-        
-        System.out.println(mDatosP9);
-        
-        System.out.println(mDatosP10);
-        
-        MenuPacientes.menuPacientes();
+            System.out.println(universo0);
+            System.out.println(mDatosP0);
+            
+            //System.out.println(mDatosP1);
+            System.out.println(mDatosP2);
+            
+            System.out.println(mDatosP3);
+            
+            System.out.println(mDatosP4);
+            
+            System.out.println(mDatosP5);
+            
+            System.out.println(mDatosP6);
+            
+            System.out.println(mDatosP7);
+            
+            System.out.println(mDatosP8);
+            
+            System.out.println(mDatosP9);
+            
+            System.out.println(mDatosP10);
+            
+            
+            //PantallaPrincipal.pantallaPrincipal();
+        }
     }
-    
+    /*
     private static void Eliminar()
     {
         
     }
-    
-}
+    */

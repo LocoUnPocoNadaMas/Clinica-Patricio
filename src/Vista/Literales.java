@@ -42,7 +42,7 @@ public interface Literales {
     public static final String mPaciente2="2.- Ver Datos Paciente";
     public static final String mPaciente3="3.- Modificar Paciente";
     public static final String mPaciente4="4.- Eliminar Paciente";
-    //public static final String mPaciente5="5.- Listar Pacientes por Apeliido";
+    public static final String mPaciente5="5.- Listar Pacientes por Apeliido";
     public static final String mPaciente6="5.- Listar Todos los Pacientes";
     public static final String mPaciente7="";
     public static final String mPaciente8="";
@@ -51,31 +51,33 @@ public interface Literales {
     public static final String mPaciente11="0.- Volver";
     
     // Menu Turno
-    
-    public static final String mTurno0="";
-    public static final String mTurno1="";
-    public static final String mTurno2="";
-    public static final String mTurno3="";
-    public static final String mTurno4="";
-    public static final String mTurno5="";
+     
+    public static final String mTurno0="\t\tMenu Turnos\n\n";
+    public static final String mTurno1="1.- Crear Nuevo Turno";
+    public static final String mTurno2="2.- Ver Turnos";
+    public static final String mTurno3="3.- Modificar Turno";
+    public static final String mTurno4="4.- Eliminar Turno";
+    public static final String mTurno5="5.- Listar Todos los Turnos por fecha";
     public static final String mTurno6="";
     public static final String mTurno7="";
     public static final String mTurno8="";
     public static final String mTurno9="";
+    public static final String mTurno10="0.- Salir";
     
     // Menu Medicos
     
-    public static final String mMedico0="";
-    public static final String mMedico1="";
-    public static final String mMedico2="";
-    public static final String mMedico3="";
-    public static final String mMedico4="";
-    public static final String mMedico5="";
-    public static final String mMedico6="";
+    public static final String mMedico0="\t\tMenu Medicos\n\n";
+    public static final String mMedico1="1.- Crear Nuevo Medico";
+    public static final String mMedico2="2.- Ver Datos Medico";
+    public static final String mMedico3="3.- Modificar Medico";
+    public static final String mMedico4="4.- Eliminar Medico";
+    public static final String mMedico5="5.- Listar Medicos por Apeliido";
+    public static final String mMedico6="5.- Listar Todos los Medicos";
     public static final String mMedico7="";
     public static final String mMedico8="";
     public static final String mMedico9="";
-    public static final String mMedico10="";
+    public static final String mMedico10="0.- Salir";
+    public static final String mMedico11="0.- Volver";
         
     // Menu Historia Clínica
     
@@ -119,7 +121,11 @@ public interface Literales {
     public static final String datosP9="Cobertura:";
     public static final String datosP10="Plan:";
     
+    /*
     
+            DatosPaciente.java no hace nada
+    
+    */
     
     public static final String mDatosP0="\tDatos del Paciente\n";
     public static final String mDatosP1="";
@@ -133,7 +139,7 @@ public interface Literales {
     public static final String mDatosP9=":";
     public static final String mDatosP10=":";
     
-    
+    // ModificarPaciente.java
     
     public static final String mModificarDP0="\tDatos del Paciente\n";
     public static final String mModificarDP1="\tModificar Datos del Paciente\n";

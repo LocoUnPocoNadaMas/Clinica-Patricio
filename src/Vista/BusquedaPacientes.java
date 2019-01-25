@@ -30,7 +30,7 @@ public class BusquedaPacientes {
     public static int buscarPaciente(int dni){
         int posicion=-1;
         if(listaPaciente!=null){
-            for (int i = 0; i <= listaPaciente.size() - 1; i++){
+            for (int i = 0; i <= listaPaciente.size()-1; i++){
                 if(dni == ControladorPaciente.getInstance().mostrarPacientes().get(i).getDni()) posicion=i;
             }
         }

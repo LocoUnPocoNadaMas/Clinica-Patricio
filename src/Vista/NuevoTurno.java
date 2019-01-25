@@ -15,6 +15,9 @@ public class NuevoTurno implements Literales{
     
     public static void nuevoTurno(){
     
+        //int eleccionNT=0;
+        //Scanner sc1 = new Scanner(System.in);
+        
         System.out.println(universo0);
         System.out.println(nuevoT0);
         
@@ -30,5 +33,6 @@ public class NuevoTurno implements Literales{
         System.out.println(nuevoT6);
         System.out.println(nuevoT7);
         System.out.println(nuevoT8);
+        
     }
 }

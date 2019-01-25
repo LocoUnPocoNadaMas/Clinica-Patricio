@@ -4,6 +4,7 @@
  * and open the template in the editor.
  */
 package Principal;
+import Vista.DatosPaciente;
 import Vista.NuevoPaciente;
 import Vista.NuevoTurno;
 import Vista.PantallaPrincipal;

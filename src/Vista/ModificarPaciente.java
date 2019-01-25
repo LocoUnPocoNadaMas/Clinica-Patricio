@@ -5,6 +5,8 @@
  */
 package Vista;
 
+import java.util.Scanner;
+
 /**
  *
  * @author patri
@@ -13,7 +15,9 @@ public class ModificarPaciente implements Literales{
     
     public static void modificarPaciente(){
         
-        int opcionMDP=0;
+        int opcion=0;
+        
+        Scanner sc1 = new Scanner(System.in);
         
         System.out.println(universo0);
         //System.out.println(mModificarDP0);
@@ -28,6 +32,29 @@ public class ModificarPaciente implements Literales{
         System.out.println(mModificarDP9);
         System.out.println(mModificarDP10);
         
+        opcion = sc1.nextInt();
         
+        switch(opcion){
+            case 1:
+                break;
+            case 2:
+                break;
+            case 3:
+                break;
+            case 4:
+                break;
+            case 5:
+                break;
+            case 6:
+                break;
+            case 7:
+                break;
+            case 8: 
+                break;
+            case 9:
+                break;
+            default:
+                break;
+        }
     }
 }

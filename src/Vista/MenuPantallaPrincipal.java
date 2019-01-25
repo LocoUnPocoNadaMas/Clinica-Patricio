@@ -5,7 +5,6 @@
  */
 package Vista;
 
-import java.awt.AWTException;
 import java.util.Scanner;
 
 /**
@@ -14,12 +13,11 @@ import java.util.Scanner;
  */
 public class MenuPantallaPrincipal implements Literales{
     
-    public static void menuPantallaPrincipal()// throws AWTException
+    public static void menuPantallaPrincipal()
     {
         int menuOpcion=0;
         Scanner sc1 = new Scanner(System.in);
-        //System.out.print("\033[H\033[2J");
-        //System.out.flush();
+                
         System.out.println(mPantallaPrincipal2);
         System.out.println(mPantallaPrincipal3);
         System.out.println(mPantallaPrincipal4);
