@@ -3,12 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Vista;
+package Vista.Consola;
 
 import Modelo.Paciente;
 import java.util.List;
 import java.util.Scanner;
-
+import Vista.Literales;
 /**
  *
  * @author Alumno

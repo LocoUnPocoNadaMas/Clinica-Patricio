@@ -4,10 +4,13 @@
  * and open the template in the editor.
  */
 package Principal;
-import Vista.DatosPaciente;
-import Vista.NuevoPaciente;
-import Vista.NuevoTurno;
-import Vista.PantallaPrincipal;
+
+import Vista.Consola.DatosPaciente;
+import Vista.Consola.NuevoPaciente;
+import Vista.Consola.NuevoTurno;
+import Vista.Consola.PantallaPrincipal;
+import javax.swing.JFrame;
+import Vista.JFrame.PantallaPricipal;
 
 /**
  *
@@ -20,7 +23,10 @@ public class Main {
      */
     public static void main(String[] args){
         // TODO code application logic here
-        PantallaPrincipal.pantallaPrincipal();
+        //PantallaPrincipal.pantallaPrincipal();
+        JFrame objeto = new PantallaPricipal();
+        objeto.setVisible(true);
+        
     }
     
 }

@@ -3,11 +3,11 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Vista;
+package Vista.Consola;
 
 import java.io.OutputStream;
 import java.io.PrintWriter;
-
+import Vista.Literales;
 /**
  *
  * @author patri
