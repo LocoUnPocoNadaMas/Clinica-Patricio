@@ -7,12 +7,12 @@ package Vista.Consola;
 
 import Controlador.ControladorPaciente;
 import java.util.Scanner;
-import Vista.Literales;
+import Vista.Interfaz;
 /**
  *
  * @author Patri
  */
-public class NuevoPaciente implements Literales {
+public class NuevoPaciente implements Interfaz {
     
     public static void nuevoPaciente(){
         

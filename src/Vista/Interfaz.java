@@ -9,14 +9,22 @@ package Vista;
  *
  * @author patri
  */
-public interface Literales {
+public interface Interfaz {
     
     // Universales
     
     public static final String universo0="\t\t\t\tClínica N.N.\n"
                                         +"\t\t\t\t------------\n\n";
     
+    
     // Principal
+    
+    public static final String principal0="";
+    public static final String principal1="¿Como desea visualizar el programa?";     
+    public static final String principal2="1.- Modo Consola";
+    public static final String principal3="2.- Modo Gráfico";        
+            
+    // Pantalla Pricipal
     
     public static final String pantallaPrincipal0="\n\n\n\n\n\n\n\n\n\n\n";
     public static final String pantallaPrincipal1="\tBuscar Paciente\n";

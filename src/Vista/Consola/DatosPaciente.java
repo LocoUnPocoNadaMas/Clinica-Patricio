@@ -7,12 +7,12 @@ package Vista.Consola;
 
 import java.io.OutputStream;
 import java.io.PrintWriter;
-import Vista.Literales;
+import Vista.Interfaz;
 /**
  *
  * @author patri
  */
-public class DatosPaciente implements Literales{
+public class DatosPaciente implements Interfaz{
     
     public static void datosPaciente(){
         

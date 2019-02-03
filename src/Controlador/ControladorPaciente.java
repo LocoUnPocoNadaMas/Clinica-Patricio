@@ -43,4 +43,8 @@ public class ControladorPaciente {
         return CrudPacientes.getInstance().buscarPaciente();        
     }
     
+    public int buscarPacientes(int dni){
+        return CrudPacientes.getInstance().buscarPaciente(dni);        
+    }
+    
 }

@@ -5,15 +5,16 @@
  */
 package Vista.Consola;
 
+import Controlador.ControladorPaciente;
 import Modelo.Paciente;
 import java.util.List;
 import java.util.Scanner;
-import Vista.Literales;
+import Vista.Interfaz;
 /**
  *
  * @author Alumno
  */
-public class PantallaPrincipal implements Literales{
+public class PantallaPrincipal implements Interfaz{
     
     public static void pantallaPrincipal(){
         
@@ -36,19 +37,22 @@ public class PantallaPrincipal implements Literales{
         else{
             dni = Integer.parseInt(documento);
             System.out.println("Buscando...");
-            
+            System.out.println(dni);
             // Si No Existe recargamos la pantalla prncipal
             if(BusquedaPacientes.buscarPaciente(dni)==-1){
                 System.out.println(pantallaPrincipalerror0);
+                
                 PantallaPrincipal.pantallaPrincipal();
                 
             // Si Existe mostrariamos un Menu con opciones para ese paciente
             }else {
-                System.out.println("encontrado");
                 /*
                 int abm=0;
                 BusquedaPacientes.BuscarPaciente(dni,abm);
-                        */
+                */
+                System.out.println(ControladorPaciente.getInstance().mostrarPacientes().get(dni).getApellido()
+                    +" "+ControladorPaciente.getInstance().mostrarPacientes().get(dni).getNombre()
+                    +" "+ControladorPaciente.getInstance().mostrarPacientes().get(dni).getDni());
             }
         }
     }

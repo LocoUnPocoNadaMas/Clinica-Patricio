@@ -6,12 +6,12 @@
 package Vista.Consola;
 
 import java.util.Scanner;
-import Vista.Literales;
+import Vista.Interfaz;
 /**
  *
  * @author patri
  */
-public class MenuPantallaPrincipal implements Literales{
+public class MenuPantallaPrincipal implements Interfaz{
     
     public static void menuPantallaPrincipal()
     {

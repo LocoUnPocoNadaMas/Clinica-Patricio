@@ -6,12 +6,12 @@
 package Vista.Consola;
 
 import java.util.Scanner;
-import Vista.Literales;
+import Vista.Interfaz;
 /**
  *
  * @author patri
  */
-public class MenuPacientes implements Literales{
+public class MenuPacientes implements Interfaz{
     
     
     public static void menuPacientes()

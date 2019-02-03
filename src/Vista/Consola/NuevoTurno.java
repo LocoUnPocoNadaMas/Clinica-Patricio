@@ -6,12 +6,12 @@
 package Vista.Consola;
 
 import java.util.Scanner;
-import Vista.Literales;
+import Vista.Interfaz;
 /**
  *
  * @author patri
  */
-public class NuevoTurno implements Literales{
+public class NuevoTurno implements Interfaz{
     
     public static void nuevoTurno(){
     
